@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="2"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGroupLayout">
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+        <EmptySpace min="-2" pref="800" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+        <EmptySpace min="-2" pref="600" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+
+  <SubComponents>
+    <Container class="javax.swing.JScrollPane" name="scrollOuter">
+      <SubComponents>
+        <Container class="javax.swing.JPanel" name="panelOuter">
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGroupLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JButton" name="btnBack">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="←"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblTitle">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Thêm sân mới"/>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Segoe UI" size="20" style="1"/>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblSubtitle">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Nhập đầy đủ thông tin sân thể thao"/>
+              </Properties>
+            </Component>
+            <Container class="javax.swing.JPanel" name="panelForm">
+              <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGroupLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JLabel" name="lblNameLbl">
+                  <Properties><Property name="text" type="java.lang.String" value="Tên sân *"/></Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="txtName"/>
+                <Component class="javax.swing.JLabel" name="lblTypeLbl">
+                  <Properties><Property name="text" type="java.lang.String" value="Loại sân *"/></Properties>
+                </Component>
+                <Component class="javax.swing.JComboBox" name="cmbType">
+                  <Properties>
+                    <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                      <StringArray count="4">
+                        <StringItem index="0" value="Bóng Đá"/>
+                        <StringItem index="1" value="Cầu Lông"/>
+                        <StringItem index="2" value="Tennis"/>
+                        <StringItem index="3" value="Bóng Rổ"/>
+                      </StringArray>
+                    </Property>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="lblDescLbl">
+                  <Properties><Property name="text" type="java.lang.String" value="Mô tả"/></Properties>
+                </Component>
+                <Container class="javax.swing.JScrollPane" name="scrDesc">
+                  <SubComponents>
+                    <Component class="javax.swing.JTextArea" name="txaDesc">
+                      <Properties><Property name="rows" type="int" value="4"/></Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Component class="javax.swing.JLabel" name="lblPriceLbl">
+                  <Properties><Property name="text" type="java.lang.String" value="Giá thuê (VNĐ/giờ) *"/></Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="txtPrice">
+                  <Properties><Property name="text" type="java.lang.String" value="0"/></Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="lblStatusLbl">
+                  <Properties><Property name="text" type="java.lang.String" value="Trạng thái *"/></Properties>
+                </Component>
+                <Component class="javax.swing.JComboBox" name="cmbStatus">
+                  <Properties>
+                    <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                      <StringArray count="2">
+                        <StringItem index="0" value="Hoạt động"/>
+                        <StringItem index="1" value="Bảo trì"/>
+                      </StringArray>
+                    </Property>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="panelBtns">
+              <Layout class="java.awt.FlowLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JButton" name="btnSave">
+                  <Properties><Property name="text" type="java.lang.String" value="💾 Thêm sân"/></Properties>
+                </Component>
+                <Component class="javax.swing.JButton" name="btnCancel">
+                  <Properties><Property name="text" type="java.lang.String" value="Hủy"/></Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>
